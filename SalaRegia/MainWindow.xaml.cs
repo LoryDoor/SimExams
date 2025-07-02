@@ -22,12 +22,12 @@ namespace Interfaccia_Server
             InitializeComponent();
 
             // Verifica se il percorso di salvataggio esiste, altrimenti lo crea.
-            if (!File.Exists(LibreriaServer.PercorsoFileIndirizzoIp))
+            if (!File.Exists(Libreria.PercorsoFileIndirizzoIp))
             {
                 // Crea il file "indirizzo.txt" se non esiste.
-                using (StreamWriter stream = new StreamWriter(LibreriaServer.PercorsoFileIndirizzoIp, false))
+                using (StreamWriter stream = new StreamWriter(Libreria.PercorsoFileIndirizzoIp, false))
                 {
-                    stream.WriteLine(LibreriaServer.IndirizzoLoopback); // Scrive l'indirizzo IP di loopback nel file.
+                    stream.WriteLine(Libreria.IndirizzoLoopback); // Scrive l'indirizzo IP di loopback nel file.
                 }
             }
             else
@@ -66,7 +66,7 @@ namespace Interfaccia_Server
                 // e filra i tipi di file supportati.
                 OpenFileDialog fileDialog = new OpenFileDialog();
                 fileDialog.Title = "Scegli il referto: ";
-                fileDialog.Filter = LibreriaServer.FiltroFile;
+                fileDialog.Filter = Libreria.FiltroFile;
                 if (fileDialog.ShowDialog() == true)
                 {
                     // Se un file è stato selezionato, aggiunge il percorso del file alla lista dei percorsi
@@ -128,7 +128,7 @@ namespace Interfaccia_Server
                         NumRighe = 0;
                         InvioDati.Percorsi.Clear();
                         // Invio del comando di reset al client.
-                        InvioDati.Invia(LibreriaServer.ComandoElimina);
+                        InvioDati.Invia(Libreria.ComandoElimina);
                         break;
 
                     case MessageBoxResult.No:
@@ -153,7 +153,7 @@ namespace Interfaccia_Server
         {
             try
             {
-                using (StreamReader stream = new StreamReader(LibreriaServer.PercorsoFileIndirizzoIp))
+                using (StreamReader stream = new StreamReader(Libreria.PercorsoFileIndirizzoIp))
                 {
                     string? indirizzo = stream.ReadLine();
                     if (indirizzo != null)

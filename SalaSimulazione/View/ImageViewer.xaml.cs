@@ -35,7 +35,7 @@ namespace SalaSimulazione.View
         private void btnZoomIn_Click(object sender, RoutedEventArgs e)
         {
             // Aumentiamo il fattore di zoom, assicurandoci che non superi il massimo consentito
-            ZoomFactor = Math.Min(ZoomFactor + LibreriaClient.Stile.ImageZoom.Step, LibreriaClient.Stile.ImageZoom.MaxZoom);
+            ZoomFactor = Math.Min(ZoomFactor + Libreria.Stile.ImageZoom.Step, Libreria.Stile.ImageZoom.MaxZoom);
             AggiornaZoom();
         }
 
@@ -43,7 +43,7 @@ namespace SalaSimulazione.View
         private void btnZoomOut_Click(object sender, RoutedEventArgs e)
         {
             // Diminuiamo il fattore di zoom, assicurandoci che non scenda al di sotto del minimo consentito.
-            ZoomFactor = Math.Max(ZoomFactor - LibreriaClient.Stile.ImageZoom.Step, LibreriaClient.Stile.ImageZoom.MinZoom);
+            ZoomFactor = Math.Max(ZoomFactor - Libreria.Stile.ImageZoom.Step, Libreria.Stile.ImageZoom.MinZoom);
             AggiornaZoom();
         }
 

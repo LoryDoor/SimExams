@@ -42,7 +42,7 @@ namespace SalaSimulazione.Model
                 HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch,
                 VerticalAlignment = VerticalAlignment.Stretch,
                 BorderBrush = System.Windows.Media.Brushes.DarkGray,
-                BorderThickness = new Thickness(LibreriaClient.Stile.BorderThickness)
+                BorderThickness = new Thickness(Libreria.Stile.BorderThickness)
             };
             BordoImmagine.Child = ImmagineTipo;
 
@@ -54,8 +54,8 @@ namespace SalaSimulazione.Model
                 HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch,
                 VerticalAlignment = VerticalAlignment.Stretch,
                 BorderBrush = System.Windows.Media.Brushes.DarkGray,
-                BorderThickness = new Thickness(LibreriaClient.Stile.BorderThickness),
-                FontSize = LibreriaClient.Stile.FontSize,
+                BorderThickness = new Thickness(Libreria.Stile.BorderThickness),
+                FontSize = Libreria.Stile.FontSize,
                 Cursor = System.Windows.Input.Cursors.Hand
             };
 
@@ -66,7 +66,7 @@ namespace SalaSimulazione.Model
                 Content = "Visualizza",
                 HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch,
                 VerticalAlignment = VerticalAlignment.Stretch,
-                FontSize = LibreriaClient.Stile.FontSize,
+                FontSize = Libreria.Stile.FontSize,
                 FontWeight = FontWeights.Bold,
                 Foreground = System.Windows.Media.Brushes.White,
                 Background = System.Windows.Media.Brushes.Blue,
@@ -80,7 +80,7 @@ namespace SalaSimulazione.Model
         //Metodo per scegliere l'immagine in base al tipo di file.
         private ImageSource SceltaImmagine(string tipo)
         {
-            string percorso = LibreriaClient.IconeTipiFile[tipo.ToLower()];
+            string percorso = Libreria.IconeTipiFile[tipo.ToLower()];
             return new BitmapImage(new Uri(percorso, UriKind.RelativeOrAbsolute));
         }
 
@@ -119,7 +119,7 @@ namespace SalaSimulazione.Model
         public void VisualizzaPdf(string nomeFile, string estensione)
         {
             // Controlla se il file esiste e lo apre con il visualizzatore PDF.
-            string percorso = $@"{LibreriaClient.PercorsoSalvataggio}\{nomeFile}.{estensione}";
+            string percorso = $@"{Libreria.PercorsoSalvataggio}\{nomeFile}.{estensione}";
             if (File.Exists(percorso))
             {
                 PdfViewerWindow viewer = new PdfViewerWindow(percorso);
@@ -136,7 +136,7 @@ namespace SalaSimulazione.Model
         public void VisualizzaTxt(string nomeFile, string estensione)
         {
             // Controlla se il file esiste e lo apre con il visualizzatore di testo.
-            string percorso = $@"{LibreriaClient.PercorsoSalvataggio}\{nomeFile}.{estensione}";
+            string percorso = $@"{Libreria.PercorsoSalvataggio}\{nomeFile}.{estensione}";
             if (File.Exists(percorso))
             {
                 TxtViewer viewer = new TxtViewer(percorso);
@@ -153,7 +153,7 @@ namespace SalaSimulazione.Model
         public void VisualizzaImmagine(string nomeFile, string estensione)
         {
             // Controlla se il file esiste e lo apre con il visualizzatore di immagini.
-            string percorso = $@"{LibreriaClient.PercorsoSalvataggio}\{nomeFile}.{estensione}";
+            string percorso = $@"{Libreria.PercorsoSalvataggio}\{nomeFile}.{estensione}";
             if (File.Exists(percorso))
             {
                 ImageViewer imageViewer = new ImageViewer(percorso);
@@ -170,7 +170,7 @@ namespace SalaSimulazione.Model
         public void VisualizzaVideo(string nomeFile, string estensione)
         {
             // Controlla se il file esiste e lo apre con il visualizzatore di video.
-            string percorso = $@"{LibreriaClient.PercorsoSalvataggio}\{nomeFile}.{estensione}";
+            string percorso = $@"{Libreria.PercorsoSalvataggio}\{nomeFile}.{estensione}";
             if (File.Exists(percorso))
             {
                 VideoViewer viewer = new VideoViewer(percorso);
@@ -188,9 +188,9 @@ namespace SalaSimulazione.Model
         private void ApriFile()
         {
             // Controlla il tipo di file e chiama il metodo appropriato per visualizzarlo.
-            if(Array.IndexOf(LibreriaClient.TipiSupportati, Tipo) != -1)
+            if(Array.IndexOf(Libreria.TipiSupportati, Tipo) != -1)
             {
-                LibreriaClient.Visualizzatori[Tipo].Invoke(this, [Nome, Tipo]);
+                Libreria.Visualizzatori[Tipo].Invoke(this, [Nome, Tipo]);
             }
             else
             {

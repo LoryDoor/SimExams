@@ -23,7 +23,7 @@ namespace SalaRegia.Model
                 // Il flusso di rete viene ottenuto dal client per inviare i dati al server
                 // tramite una stringa convertita in un array di byte.
                 // In seguito all'invio della stringa, il metodo esce senza ulteriori operazioni.
-                client = new TcpClient(IndirizzoIp, LibreriaServer.Porta);
+                client = new TcpClient(IndirizzoIp, Libreria.Porta);
                 stream = client.GetStream();
                 byte[] dati = Encoding.UTF8.GetBytes(stringa);
                 stream.Write(dati);
@@ -50,7 +50,7 @@ namespace SalaRegia.Model
             NetworkStream? stream = null;
             try
             {
-                client = new TcpClient(IndirizzoIp, LibreriaServer.Porta);
+                client = new TcpClient(IndirizzoIp, Libreria.Porta);
                 stream = client.GetStream();
                 // Invio del nome
                 byte[] nome = Encoding.UTF8.GetBytes(nomeFile);
@@ -70,7 +70,7 @@ namespace SalaRegia.Model
                     // Calcola la dimensione del prossimo pacchetto da inviare, che non può superare la dimensione del buffer.
                     // Scrive il pacchetto nel flusso di rete.
                     // Aggiorna il conteggio dei byte inviati e quelli rimanenti.
-                    int dimensioneProssimoPacchetto = (byteRimanenti > LibreriaServer.DimensioneBuffer) ? LibreriaServer.DimensioneBuffer : byteRimanenti;
+                    int dimensioneProssimoPacchetto = (byteRimanenti > Libreria.DimensioneBuffer) ? Libreria.DimensioneBuffer : byteRimanenti;
                     stream.Write(pacchetto, byteInviati, dimensioneProssimoPacchetto);
                     byteInviati += dimensioneProssimoPacchetto;
                     byteRimanenti -= dimensioneProssimoPacchetto;

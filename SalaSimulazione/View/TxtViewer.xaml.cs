@@ -21,18 +21,18 @@ namespace SalaSimulazione.View
         private void btnZoomIn_Click(object sender, RoutedEventArgs e)
         {
             // Controlla se la dimensione del font è inferiore alla dimensione massima
-            if (TextContent.FontSize < LibreriaClient.Stile.TxtZoom.MaxFontSize) // Controlla se la dimensione del font è inferiore alla dimensione massima
+            if (TextContent.FontSize < Libreria.Stile.TxtZoom.MaxFontSize) // Controlla se la dimensione del font è inferiore alla dimensione massima
             {
-                TextContent.FontSize += LibreriaClient.Stile.TxtZoom.Step; // Aumenta la dimensione del font
+                TextContent.FontSize += Libreria.Stile.TxtZoom.Step; // Aumenta la dimensione del font
             }
         }
 
         private void btnZoomOut_Click(object sender, RoutedEventArgs e)
         {
             // Controlla se la dimensione del font è superiore alla dimensione minima
-            if (TextContent.FontSize > LibreriaClient.Stile.TxtZoom.MinFontSize) // Controlla se la dimensione del font è superiore alla dimensione minima
+            if (TextContent.FontSize > Libreria.Stile.TxtZoom.MinFontSize) // Controlla se la dimensione del font è superiore alla dimensione minima
             {
-                TextContent.FontSize -= LibreriaClient.Stile.TxtZoom.Step; // Diminuisce la dimensione del font
+                TextContent.FontSize -= Libreria.Stile.TxtZoom.Step; // Diminuisce la dimensione del font
             }
         }
     }

@@ -2,7 +2,7 @@
 
 namespace SalaRegia.Model
 {
-    public class LibreriaServer
+    public class Libreria
     {
         public const string ComandoElimina = "MASTER_SAYS_CLEAR_ALL";       // Comando per lanciare il reset
         public const string IndirizzoLoopback = "127.0.0.1";                // Indirizzo IP di loopback

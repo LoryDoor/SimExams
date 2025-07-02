@@ -9,7 +9,7 @@ namespace SalaSimulazione.Model
 {
     public static class RicezioneDati
     {
-        public static TcpListener Listener = new TcpListener(IPAddress.Any, LibreriaClient.Porta); // Porta su cui il server ascolta le connessioni in arrivo
+        public static TcpListener Listener = new TcpListener(IPAddress.Any, Libreria.Porta); // Porta su cui il server ascolta le connessioni in arrivo
         public static List<string> Percorsi = new();    // Lista dei percorsi dei file ricevuti
 
         public static int Ricevi(string percorsoFile)
@@ -24,11 +24,11 @@ namespace SalaSimulazione.Model
                 client = Listener.AcceptTcpClient();
                 stream = client.GetStream();
                 // Lettura del nome del file
-                byte[] byteNomeFile = new byte[LibreriaClient.Dimensioni.NomeFile];
+                byte[] byteNomeFile = new byte[Libreria.Dimensioni.NomeFile];
                 int nomeFileBytesRead = stream.Read(byteNomeFile, 0, byteNomeFile.Length);
                 string nomeFile = Encoding.UTF8.GetString(byteNomeFile, 0, nomeFileBytesRead).TrimEnd('\0');
                 // Verifica se il nome del file corrisponde al comando di eliminazione
-                if (nomeFile == LibreriaClient.ComandoElimina)
+                if (nomeFile == Libreria.ComandoElimina)
                 {
                     System.Windows.Application.Current.Dispatcher.Invoke(() =>
                     {
@@ -53,7 +53,7 @@ namespace SalaSimulazione.Model
                 while (byteRimanenti > 0)
                 {
                     // Legge i dati in pacchetti di dimensione dimBuffer
-                    int dimensioneProssimoPacchetto = (byteRimanenti > LibreriaClient.Dimensioni.Buffer) ? LibreriaClient.Dimensioni.Buffer : byteRimanenti;
+                    int dimensioneProssimoPacchetto = (byteRimanenti > Libreria.Dimensioni.Buffer) ? Libreria.Dimensioni.Buffer : byteRimanenti;
                     // Legge i dati dal flusso e li memorizza nell'array dati.
                     byteLetti = stream.Read(dati, byteTotaliLetti, dimensioneProssimoPacchetto);
                     // Aggiorna il conteggio dei byte totali letti e dei byte rimanenti da leggere.

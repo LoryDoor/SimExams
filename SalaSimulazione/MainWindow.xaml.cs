@@ -21,10 +21,10 @@ namespace SalaSimulazione
             InitializeComponent();
 
 
-            if (!Path.Exists(LibreriaClient.PercorsoSalvataggio))
+            if (!Path.Exists(Libreria.PercorsoSalvataggio))
             {
                 // Crea la cartella di salvataggio se non esiste
-                Directory.CreateDirectory(LibreriaClient.PercorsoSalvataggio);
+                Directory.CreateDirectory(Libreria.PercorsoSalvataggio);
             }
         }
 
@@ -34,7 +34,7 @@ namespace SalaSimulazione
             // Utilizza Dispatcher per aggiornare l'interfaccia utente in modo sicuro dal thread di background
             Dispatcher.Invoke(() =>
             {
-                if (nome != LibreriaClient.ComandoElimina)
+                if (nome != Libreria.ComandoElimina)
                 {
                     try
                     {
@@ -87,7 +87,7 @@ namespace SalaSimulazione
                     try
                     {
                         // Riceve i dati dal server e li salva nel percorso specificato
-                        if (RicezioneDati.Ricevi(LibreriaClient.PercorsoSalvataggio) == 0)
+                        if (RicezioneDati.Ricevi(Libreria.PercorsoSalvataggio) == 0)
                         {
                             NuovaRiga(Path.GetFileName(RicezioneDati.Percorsi[NumRighe]));
                         }

@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace SalaSimulazione.Model
 {
-    public static class LibreriaClient
+    public static class Libreria
     {
         public const string ComandoElimina = "MASTER_SAYS_CLEAR_ALL";                                                                           // Comando per lanciare il reset
         public const int Porta = 5000;                                                                                                          // Porta su cui il server ascolta le connessioni

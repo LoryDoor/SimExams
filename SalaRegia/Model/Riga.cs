@@ -42,7 +42,7 @@ namespace SalaRegia.Model
                 HorizontalAlignment = HorizontalAlignment.Stretch,
                 VerticalAlignment = VerticalAlignment.Stretch,
                 BorderBrush = Brushes.DarkGray,
-                BorderThickness = new Thickness(LibreriaServer.Stile.BorderThickness)
+                BorderThickness = new Thickness(Libreria.Stile.BorderThickness)
             };
             BordoImmagine.Child = ImmagineTipo;
 
@@ -54,8 +54,8 @@ namespace SalaRegia.Model
                 HorizontalAlignment = HorizontalAlignment.Stretch,
                 VerticalAlignment = VerticalAlignment.Stretch,
                 BorderBrush = Brushes.DarkGray,
-                BorderThickness = new Thickness(LibreriaServer.Stile.BorderThickness),
-                FontSize = LibreriaServer.Stile.FontSize,
+                BorderThickness = new Thickness(Libreria.Stile.BorderThickness),
+                FontSize = Libreria.Stile.FontSize,
             };
 
             // Creazione del contenitore border per i bottoni.
@@ -65,7 +65,7 @@ namespace SalaRegia.Model
                 HorizontalAlignment = HorizontalAlignment.Stretch,
                 VerticalAlignment = VerticalAlignment.Stretch,
                 BorderBrush = Brushes.DarkGray,
-                BorderThickness = new Thickness(LibreriaServer.Stile.BorderThickness)
+                BorderThickness = new Thickness(Libreria.Stile.BorderThickness)
             };
             // Creazione del pannello per i bottoni di invio e invio tra.
             PannelloBottoni = new StackPanel
@@ -80,9 +80,9 @@ namespace SalaRegia.Model
             {
                 // Modifica le proprietà del bottone di invio.
                 Content = "Invia",
-                Margin = new Thickness(LibreriaServer.Stile.ButtonMargin),
-                Padding = new Thickness(LibreriaServer.Stile.ButtonPadding),
-                FontSize = LibreriaServer.Stile.FontSize,
+                Margin = new Thickness(Libreria.Stile.ButtonMargin),
+                Padding = new Thickness(Libreria.Stile.ButtonPadding),
+                FontSize = Libreria.Stile.FontSize,
                 FontWeight = FontWeights.Bold,
                 Foreground = Brushes.White,
                 Background = Brushes.Blue,
@@ -96,9 +96,9 @@ namespace SalaRegia.Model
             {
                 // Modifica le proprietà del bottone di invio tra.
                 Content = "Invia tra",
-                Margin = new Thickness(LibreriaServer.Stile.ButtonMargin),
-                Padding = new Thickness(LibreriaServer.Stile.ButtonPadding),
-                FontSize = LibreriaServer.Stile.FontSize,
+                Margin = new Thickness(Libreria.Stile.ButtonMargin),
+                Padding = new Thickness(Libreria.Stile.ButtonPadding),
+                FontSize = Libreria.Stile.FontSize,
                 FontWeight = FontWeights.Bold,
                 Foreground = Brushes.White,
                 Background = Brushes.Blue,
@@ -113,7 +113,7 @@ namespace SalaRegia.Model
         // Metodo per scegliere l'immagine in base al tipo di file.
         private ImageSource SceltaImmagine(string tipo) 
         {
-            string rinomina = LibreriaServer.IconeTipiFile[tipo.ToLower()];
+            string rinomina = Libreria.IconeTipiFile[tipo.ToLower()];
             return new BitmapImage(new Uri(rinomina, UriKind.RelativeOrAbsolute));
         }
 

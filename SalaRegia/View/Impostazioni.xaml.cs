@@ -17,7 +17,7 @@ namespace SalaRegia.View
             InitializeComponent();
 
             txtIndirizzo.Text = InvioDati.IndirizzoIp;
-            if (InvioDati.IndirizzoIp == LibreriaServer.IndirizzoLoopback)
+            if (InvioDati.IndirizzoIp == Libreria.IndirizzoLoopback)
             {
                 checkLoopback.IsChecked = true;
                 txtIndirizzo.IsReadOnly = true;
@@ -53,7 +53,7 @@ namespace SalaRegia.View
         private void checkLoopback_Checked(object sender, RoutedEventArgs e)
         {
             // Imposta l'indirizzo IP di loopback in modalità di sola lettura.
-            txtIndirizzo.Text = LibreriaServer.IndirizzoLoopback;
+            txtIndirizzo.Text = Libreria.IndirizzoLoopback;
             txtIndirizzo.IsReadOnly = true;
         }
 
@@ -70,7 +70,7 @@ namespace SalaRegia.View
         {
             try
             {
-                StreamWriter stream = new StreamWriter(LibreriaServer.PercorsoFileIndirizzoIp, false);
+                StreamWriter stream = new StreamWriter(Libreria.PercorsoFileIndirizzoIp, false);
                 stream.WriteLine(indirizzo);
                 stream.Close(); // Chiude lo stream dopo la scrittura.
             }
