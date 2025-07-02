@@ -1,0 +1,28 @@
+﻿<Window x:Class="SalaSimulazione.View.VideoViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vlc="clr-namespace:LibVLCSharp.WPF;assembly=LibVLCSharp.WPF"
+        
+        Title="Referto Video" 
+        Height="730" MinHeight="730" Width="1080"
+        Loaded="Window_Loaded" Closed="Window_Closed"
+>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <vlc:VideoView x:Name="VideoView"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <DockPanel VerticalAlignment="Bottom" Background="DarkGray" Height="60" LastChildFill="True" Opacity="0.8">
+                <Button x:Name="btnRewind" Content="⏮" Width="50" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Foreground="Black" Cursor="Hand" Click="btnRewind_Click"/>
+                <Button x:Name="btnPlay" Content="▶" Width="50" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Foreground="DarkGreen" Cursor="Hand" Click="btnPlay_Click"/>
+                <Button x:Name="btnPause" Content="⏸" Width="50" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Foreground="DarkOrange" Cursor="Hand" Click="btnPause_Click"/>
+                <Button x:Name="btnStop" Content="⏹" Width="50" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Foreground="Red" Cursor="Hand" Click="btnStop_Click"/>
+                <Slider x:Name="SeekBar" Minimum="0" Maximum="1000" VerticalAlignment="Center" Margin="5,0,5,0" Cursor="Hand" ValueChanged="SeekBar_ValueChanged"/>
+            </DockPanel>
+        </Grid>
+    </Grid>
+</Window>

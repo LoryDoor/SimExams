@@ -1,0 +1,35 @@
+﻿<Window x:Class="SalaRegia.View.InserisciTempo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalaRegia.View"
+        mc:Ignorable="d"
+        
+        Title="Inserisci ritardo" 
+        Height="250" Width="300" MaxHeight="250" MaxWidth="300" MinHeight="250" MinWidth="300" 
+        Closed="Window_Closed"
+>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="155"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Label Content="Inserisci il tempo in secondi:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-80,0,0" FontSize="14" FontWeight="Bold"/>
+            <TextBox x:Name="txtTempo" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-30,0,0" Height="20" Width="200"/>
+
+            <Label Content="Scelte rapide:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,30,0,0" FontSize="14" FontWeight="Bold"/>
+            <RadioButton x:Name="SceltaRapidaTempo5" GroupName="SceltaRapidaTempo" Content="5s" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,90,0,0" FontSize="14" Cursor="Hand" Checked="SceltaRapidaTempo_Checked"/>
+            <RadioButton x:Name="SceltaRapidaTempo10" GroupName="SceltaRapidaTempo" Content="10s" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="90,90,0,0" FontSize="14" Cursor="Hand" Checked="SceltaRapidaTempo_Checked"/>
+            <RadioButton x:Name="SceltaRapidaTempo15" GroupName="SceltaRapidaTempo" Content="15s" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,90,90,0" FontSize="14" Cursor="Hand" Checked="SceltaRapidaTempo_Checked"/>
+            <RadioButton x:Name="SceltaRapidaTempo20" GroupName="SceltaRapidaTempo" Content="20s" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,90,20,0" FontSize="14" Cursor="Hand" Checked="SceltaRapidaTempo_Checked"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Button x:Name="btnConferma" Content="Conferma" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-140,0,0,0" Width="100" Height="30" FontSize="14" FontWeight="Bold" Background="#77DD77" Cursor="Hand" Click="btnConferma_Click"/>
+            <Button x:Name="btnAnnulla" Content="Annulla" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="140,0,0,0" Width="100" Height="30" FontSize="14" FontWeight="Bold" Background="#FFDC362E" Cursor="Hand" Click="btnAnnulla_Click"/>
+        </Grid>
+    </Grid>
+</Window>

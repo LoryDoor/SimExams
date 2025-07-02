@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>iconaSimExamRegia.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Immagini\iconaFoto.png" />
+    <None Remove="Immagini\iconaPdf.png" />
+    <None Remove="Immagini\iconaTxt.png" />
+    <None Remove="Immagini\iconaVideo.png" />
+    <None Remove="Immagini\logoFauser.png" />
+    <None Remove="Immagini\logoSimExams.png" />
+    <None Remove="Immagini\logoSimnova.jpg" />
+    <None Remove="Immagini\settings.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="iconaSimExamRegia.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Immagini\iconaFoto.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Immagini\iconaPdf.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Immagini\iconaTxt.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Immagini\iconaVideo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Immagini\logoFauser.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Immagini\logoSimExams.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Immagini\logoSimnova.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Immagini\settings.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

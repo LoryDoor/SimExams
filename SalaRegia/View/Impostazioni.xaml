@@ -1,0 +1,19 @@
+﻿<Window x:Class="SalaRegia.View.Impostazioni"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalaRegia.View"
+        mc:Ignorable="d"
+        
+        Title="Impostazioni" 
+        Height="250" Width="200" MaxHeight="250" MaxWidth="200" MinHeight="250" MinWidth="200"
+>
+    <Grid>
+        <Label Content="Inserisci l'indirizzo IP" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="0,-120,0,0"/>
+        <Label Content="del computer ricevente:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="0,-80,0,0"/>
+        <TextBox x:Name="txtIndirizzo" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Width="150" FontSize="14"/>
+        <CheckBox x:Name="checkLoopback" Content="Usa loopback" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,70,0,0" FontSize="14" Cursor="Hand" Checked="checkLoopback_Checked" Unchecked="checkLoopback_Unchecked"/>
+        <Button x:Name="btnSalva" Content="Salva" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,140,0,0" Width="80" Height="25" FontSize="14" FontWeight="Bold" Cursor="Hand" Click="btnSalva_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="SalaSimulazione.View.TxtViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        Title="Referto testetuale"
+        Height="720" Width="1080" MaxHeight="1440" MaxWidth="2560"
+>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="TextContent" Grid.Row="0" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" FontFamily="Consolas" FontSize="14" AcceptsReturn="True"/>
+        <Grid Grid.Row="1">
+            <Button x:Name="btnZoomIn" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Center" Height="30" Width="30" FontSize="18" FontWeight="Bold" Background="Transparent" Cursor="Hand" Click="btnZoomIn_Click">
+                <Image Source="/Immagini/aumentoZoom.png" Stretch="UniformToFill"/>
+            </Button>
+            <Button x:Name="btnZoomOut" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Center" Height="30" Width="30" FontSize="18" FontWeight="Bold" Background="Transparent" Cursor="Hand" Click="btnZoomOut_Click">
+                <Image Source="/Immagini/riduzioneZoom.png" Stretch="UniformToFill"/>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

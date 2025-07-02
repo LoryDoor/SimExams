@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaSimulazione", "SalaSimulazione\SalaSimulazione.csproj", "{6A08A3F7-4F8A-73E8-50CD-52AA2C0753E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaRegia", "SalaRegia\SalaRegia.csproj", "{7DE85F85-92BA-DC40-D641-10FBEED7672E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A08A3F7-4F8A-73E8-50CD-52AA2C0753E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A08A3F7-4F8A-73E8-50CD-52AA2C0753E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A08A3F7-4F8A-73E8-50CD-52AA2C0753E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A08A3F7-4F8A-73E8-50CD-52AA2C0753E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DE85F85-92BA-DC40-D641-10FBEED7672E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DE85F85-92BA-DC40-D641-10FBEED7672E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DE85F85-92BA-DC40-D641-10FBEED7672E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DE85F85-92BA-DC40-D641-10FBEED7672E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01C1575F-2C60-47C8-8107-F75C9363F31F}
+	EndGlobalSection
+EndGlobal
