@@ -3,7 +3,7 @@
 ![Logo SimExams](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimExams.png)
 
 ## Cos'è SimExams? ##
-SimExams è una soluzione software per PC per la simulazione medica, utilizzabile per inviare file tra due device idealmente, sala di regia e sala di simulazione.
+SimExams è una soluzione software per PC per la simulazione medica, utilizzabile per inviare file tra due device, idealmente sala di regia e sala di simulazione.
 
 ## Come nasce? ##
 Il progetto nasce all'interno di uno stage PCTO che ha coinvolto tre studenti del 4° anno presso l'Istituto Tecnico Tecnologico "Giacomo Fauser" di Novara e Simnova, il centro di simulazione medica dell'Università del Piemonte Orientale.
@@ -17,7 +17,7 @@ per ulteriori dettagli sul funzionamento dei due software rimandiamo al [manuale
 
 ## Come è stato reallizzato? ##
 Il progetto è codificato in Linguaggio C# con Framework .NET 8.0.
-Le interfacce grafiche sono state realizzate tramite WPF (Windows Presentation Foundation)
+Le interfacce grafiche sono state realizzate tramite WPF (Windows Presentation Foundation).
 
 Sono state inoltre incluse le librerie:
 - [PdfiumViewer](https://github.com/pvginkel/PdfiumViewer): per la visualizzazione dei PDF;
@@ -30,7 +30,9 @@ L'applicativo è distribuito in formato portable ed è compatibile solo con sist
 Per il corretto funzionamento è necessario installare sulle macchine dove veranno eseguiti i due applicativi il [framework .NET 8.0 (o versione successiva)](https://dotnet.microsoft.com/it-it/download/dotnet/8.0)
 
 ## Lingua ##
-Attualmente il software è disponibile soltanto in lingua italiana; i commenti del codice sono interamente in italiano.
+Il codice è stato commentato interamente in italiano.
+Attualmente il software è disponibile soltanto in lingua italiana.
+Il manuale di uso è redatto in lingua italiana.
 
-## Eseguibili ##
-Per ottenere gli eseguibili delle applicazioni è necessario contattare simnova@uniupo.it .
+## Distribuzione ##
+Chi fosse interessato ad utilizzare SimExams, o volesse ricevere ulteriori informazioni sul progetto, contatti Simnova all'email [simnova@uniupo.it](mailto:simnova@uniupo.it)
