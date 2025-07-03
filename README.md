@@ -13,7 +13,8 @@ La richiesta del personale di Simnova era quella di un software per inviare i re
 La soluzione è composta da due software:
 - **SalaRegia**: permette di caricare i file dei referti e inviarli alla sala di simulazione immediatamente o dopo un tempo impostato dall'utente;
 - **SalaSimulazione**: permette di visualizzare i file provenienti dalla sala di regia;
-per ulteriori dettagli sul funzionamento dei due software rimandiamo al [manuale di uso](https://github.com/LoryDoor/SimExams/blob/master/SimExams_Manuale_di_uso.pdf).
+
+Per ulteriori dettagli sul funzionamento dei due software rimandiamo al [manuale di uso](https://github.com/LoryDoor/SimExams/blob/master/SimExams_Manuale_di_uso.pdf).
 
 ## Come è stato reallizzato? ##
 Il progetto è codificato in Linguaggio C# con Framework .NET 8.0.
@@ -27,7 +28,8 @@ Come IDE è stato utilizzato Visual Studio 2022 edizione Comunity
 
 ## Specifiche tecniche ##
 L'applicativo è distribuito in formato portable ed è compatibile solo con sistemi operativi Windows.
-Per il corretto funzionamento è necessario installare sulle macchine dove veranno eseguiti i due applicativi il [framework .NET 8.0 (o versione successiva)](https://dotnet.microsoft.com/it-it/download/dotnet/8.0)
+Per il corretto funzionamento è necessario installare sulle macchine dove veranno eseguiti i due applicativi il [framework .NET 8.0 (o versione successiva)](https://dotnet.microsoft.com/it-it/download/dotnet/8.0).
+Per utilizzare il software per la comunicazione tra due device è necessaria la connessione ad una rete locale, ma è possibile utilizzarlo senza conensione se la macchina mittente coincide con quella ricevente.
 
 ## Lingua ##
 Il codice è stato commentato interamente in italiano.
@@ -36,3 +38,6 @@ Il manuale di uso è redatto in lingua italiana.
 
 ## Distribuzione ##
 Chi fosse interessato ad utilizzare SimExams, o volesse ricevere ulteriori informazioni sul progetto, contatti Simnova all'email [simnova@uniupo.it](mailto:simnova@uniupo.it)
+
+![Logo Simnova](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimnova.png)
+![Logo Fauser](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoFauser.png)
