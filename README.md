@@ -41,5 +41,3 @@ Chi fosse interessato ad utilizzare SimExams, o volesse ricevere ulteriori infor
 
 |![Logo Simnova](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimnova.jpg)|![Logo Fauser](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoFauser.png)|
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-|      | 
