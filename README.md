@@ -39,5 +39,5 @@ Il manuale di uso è redatto in lingua italiana.
 ## Distribuzione ##
 Chi fosse interessato ad utilizzare SimExams, o volesse ricevere ulteriori informazioni sul progetto, contatti Simnova all'email [simnova@uniupo.it](mailto:simnova@uniupo.it)
 
-![Logo Simnova](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimnova.png)
+![Logo Simnova](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimnova.jpg)
 ![Logo Fauser](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoFauser.png)
