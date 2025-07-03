@@ -28,3 +28,9 @@ Come IDE è stato utilizzato Visual Studio 2022 edizione Comunity
 ## Specifiche tecniche ##
 L'applicativo è distribuito in formato portable ed è compatibile solo con sistemi operativi Windows.
 Per il corretto funzionamento è necessario installare sulle macchine dove veranno eseguiti i due applicativi il [framework .NET 8.0 (o versione successiva)](https://dotnet.microsoft.com/it-it/download/dotnet/8.0)
+
+## Lingua ##
+Attualmente il software è disponibile soltanto in lingua italiana; i commenti del codice sono interamente in italiano.
+
+## Eseguibili ##
+Per ottenere gli eseguibili delle applicazioni è necessario contattare simnova@uniupo.it .
