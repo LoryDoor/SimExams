@@ -39,5 +39,16 @@ Il manuale di uso è redatto in lingua italiana.
 ## Distribuzione ##
 Chi fosse interessato ad utilizzare SimExams, o volesse ricevere ulteriori informazioni sul progetto, contatti Simnova all'email [simnova@uniupo.it](mailto:simnova@uniupo.it)
 
-|![Logo Simnova](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimnova.jpg)|![Logo Fauser](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoFauser.png)|
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Crediti ##
+Il progetto è stato realizzato da:
+- **Davide Baldinu**: Clasee 4ªFIN di ITT Fauser
+- **Giada Croci**: Clasee 4ªAIN di ITT Fauser
+- **Lorenzo Porta**: Clasee 4ªFIN di ITT Fauser
+
+La realizzazione del progetto si è svolta sotto la supervisione di:
+- Dott. **Antonio Scalogna**: Tutor aziendale PCTO per Simnova
+- Prof. **Luigia Genoni**: Tutor scolastico PCTO per ITT Fauser
+- Prof. **Paola Pirrò**: Tutor scolastico PCTO per ITT Fauser
+
+![Logo Simnova](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimnova.jpg)
+![Logo Fauser](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoFauser.png)
