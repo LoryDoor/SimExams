@@ -1,6 +1,6 @@
 # Software per la simulazione medica SimExams #
 
-![Logo SimExams](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimExams.png)
+![Logo SimExams](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/SimExams.jpg)
 
 ## Cos'è SimExams? ##
 SimExams è una soluzione software per PC per la simulazione medica, utilizzabile per inviare file tra due device, idealmente sala di regia e sala di simulazione.
@@ -41,9 +41,9 @@ Chi fosse interessato ad utilizzare SimExams, o volesse ricevere ulteriori infor
 
 ## Crediti ##
 Il progetto è stato realizzato da:
-- **Davide Baldinu**: Clasee 4ªFIN di ITT Fauser
-- **Giada Croci**: Clasee 4ªAIN di ITT Fauser
-- **Lorenzo Porta**: Clasee 4ªFIN di ITT Fauser
+- **Davide Baldinu**: Classe 4ªFIN di ITT Fauser
+- **Giada Croci**: Classe 4ªAIN di ITT Fauser
+- **Lorenzo Porta**: Classe 4ªFIN di ITT Fauser
 
 La realizzazione del progetto si è svolta sotto la supervisione di:
 - Dott. **Antonio Scalogna**: Tutor aziendale PCTO per Simnova
