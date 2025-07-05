@@ -1,6 +1,6 @@
 # Software per la simulazione medica SimExams #
 
-![Logo SimExams](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimExams.png)
+![Logo SimExams](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/SimExams.jpg)
 
 ## Cos'è SimExams? ##
 SimExams è una soluzione software per PC per la simulazione medica, utilizzabile per inviare file tra due device, idealmente sala di regia e sala di simulazione.
