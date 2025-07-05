@@ -20,6 +20,7 @@
     <None Remove="Immagini\logoSimExams.png" />
     <None Remove="Immagini\logoSimnova.jpg" />
     <None Remove="Immagini\riduzioneZoom.png" />
+    <None Remove="Immagini\SimExams.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,13 +55,13 @@
     <Resource Include="Immagini\logoFauser.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Immagini\logoSimExams.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="Immagini\logoSimnova.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Immagini\riduzioneZoom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Immagini\SimExams.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
