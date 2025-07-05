@@ -1,6 +1,6 @@
 # Software per la simulazione medica SimExams #
 
-![Logo SimExams](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/SimExams.jpg)
+![Logo SimExams](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimExams.png)
 
 ## Cos'è SimExams? ##
 SimExams è una soluzione software per PC per la simulazione medica, utilizzabile per inviare file tra due device, idealmente sala di regia e sala di simulazione.
@@ -50,5 +50,5 @@ La realizzazione del progetto si è svolta sotto la supervisione di:
 - Prof. **Luigia Genoni**: Tutor scolastico PCTO per ITT Fauser
 - Prof. **Paola Pirrò**: Tutor scolastico PCTO per ITT Fauser
 
-![Logo Simnova](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimnova.jpg)
+<img src="https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimnova.jpg" width="300" alt="logo simnova"/>
 ![Logo Fauser](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoFauser.png)
