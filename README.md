@@ -50,5 +50,5 @@ La realizzazione del progetto si è svolta sotto la supervisione di:
 - Prof. **Luigia Genoni**: Tutor scolastico PCTO per ITT Fauser
 - Prof. **Paola Pirrò**: Tutor scolastico PCTO per ITT Fauser
 
-<img src="https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimnova.jpg" width="300" alt="logo simnova"/>
 ![Logo Fauser](https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoFauser.png)
+<img src="https://github.com/LoryDoor/SimExams/blob/master/SalaRegia/Immagini/logoSimnova.jpg" width="300" alt="logo simnova"/>
